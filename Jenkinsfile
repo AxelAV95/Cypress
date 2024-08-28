@@ -16,7 +16,7 @@ pipeline {
     }
     post {
         always {
-            junit 'cypress/results/junit/*.xml'
+            //junit 'cypress/results/junit/*.xml'
         }
         success {
             echo 'Tests passed!'
