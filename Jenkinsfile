@@ -2,12 +2,16 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
-            export TERM=xterm
-            steps {
-                sh 'cd 01-practica && npm install'
-            }
-        }
+       stage('Build') {
+    steps {
+        sh '''
+        export TERM=xterm
+        cd 01-practica
+        npm install
+        '''
+    }
+}
+
         stage('Test') {
             steps {
                 sh 'cd 01-practica && xvfb-run -a npx cypress run'
