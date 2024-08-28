@@ -10,7 +10,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                 cd /var/jenkins_home/workspace/cypress-testing-job/01-practica
+                 sh 'cd /var/jenkins_home/workspace/cypress-testing-job/01-practica'
                  sh 'xvfb-run -a npx cypress run'
             }
         }
