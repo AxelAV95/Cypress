@@ -3,6 +3,7 @@ pipeline {
 
     stages {
         stage('Build') {
+            export TERM=xterm
             steps {
                 sh 'cd 01-practica && npm install'
             }
