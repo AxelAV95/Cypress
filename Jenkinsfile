@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'cd 01-practica'
+                sh 'cd 01-practica' 
              //   sh 'npm install'
             }
         }
