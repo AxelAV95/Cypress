@@ -15,9 +15,9 @@ pipeline {
         }
     }
     post {
-        always {
+     //   always {
             //junit 'cypress/results/junit/*.xml'
-        }
+       // }
         success {
             echo 'Tests passed!'
         }
